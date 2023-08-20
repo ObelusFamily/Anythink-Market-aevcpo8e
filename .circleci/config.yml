@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: cimg/node:16.18
 
-    working_directory: /circleci/home/project/frontend
+    working_directory: ~/circleci/home/project/frontend
 
     steps:
       - checkout:

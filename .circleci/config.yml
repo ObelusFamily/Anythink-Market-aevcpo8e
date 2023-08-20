@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - checkout:
-        path: /circleci/home/project
+        path: ~/circleci/home/project
       - run:
           name: Install deps
           command: yarn install

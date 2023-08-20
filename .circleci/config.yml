@@ -9,11 +9,9 @@ jobs:
       - run:
           name: Install deps
           command: yarn install
-      - run: ls
-      - run: cd frontend
       - run:
           name: Run tests
-          command: yarn test
+          command: cd frontend && yarn test
 
 workflows:
   build-and-test:

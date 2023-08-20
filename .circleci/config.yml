@@ -2,6 +2,7 @@ version: 2.1
 
 jobs:
   build-and-test:
+    working_directory: frontend
     docker:
       - image: cimg/node:16.18
     steps:
@@ -11,7 +12,7 @@ jobs:
           command: yarn install
       - run:
           name: Run tests
-          command: cd frontend && yarn install && yarn test
+          command: yarn test
 
 workflows:
   build-and-test:

@@ -7,7 +7,7 @@ jobs:
       - image: cimg/node:16.18
     steps:
       - checkout
-      working_directory: frontend
+      - working_directory: frontend
       - run:
           name: Install deps
           command: yarn install
